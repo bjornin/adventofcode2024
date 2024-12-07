@@ -90,7 +90,7 @@ pub fn s2(input: &str) -> usize {
             loop {
                 let dir = dir_iter.next().unwrap();
                 'inner: loop {
-                    if let Some(d) = new_visited.get(&(new_start, *dir)) {
+                    if new_visited.contains_key(&(new_start, *dir)) {
                         return true;
                     } else {
                         new_visited.entry((new_start, *dir)).or_insert(0);

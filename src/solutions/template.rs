@@ -24,7 +24,7 @@ mod tests {
     }
     #[test]
     fn test_s2() {
-        let res = s2(INPUT2);
+        let res = s2(INPUT);
         assert_eq!(res, 0);
     }
 }
