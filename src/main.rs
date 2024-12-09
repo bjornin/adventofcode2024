@@ -7,6 +7,7 @@ mod solutions {
     pub mod d6;
     pub mod d7;
     pub mod d8;
+    pub mod d9;
 }
 use solutions::*;
 use std::env;
@@ -28,6 +29,7 @@ fn main() {
         "6" => println!("1: {} 2: {}", d6::s1(&input), d6::s2(&input)),
         "7" => println!("1: {} 2: {}", d7::s1(&input), d7::s2(&input)),
         "8" => println!("1: {} 2: {}", d8::s1(&input), d8::s2(&input)),
+        "9" => println!("1: {} 2: {}", d9::s1(&input), d9::s2(&input)),
         _ => eprintln!("Invalid day: {}", args[1]),
     }
 }
