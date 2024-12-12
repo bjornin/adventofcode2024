@@ -2,6 +2,7 @@ mod solutions {
     pub mod d1;
     pub mod d10;
     pub mod d11;
+    pub mod d12;
     pub mod d2;
     pub mod d3;
     pub mod d4;
@@ -34,6 +35,7 @@ fn main() {
         "9" => println!("1: {} 2: {}", d9::s1(&input), d9::s2(&input)),
         "10" => println!("1: {} 2: {}", d10::s1(&input), d10::s2(&input)),
         "11" => println!("1: {} 2: {}", d11::s1(&input), d11::s2(&input)),
+        "12" => println!("1: {} 2: {}", d12::s1(&input), d12::s2(&input)),
         _ => eprintln!("Invalid day: {}", args[1]),
     }
 }
